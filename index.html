@@ -31,7 +31,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -53,7 +53,7 @@
                         <span>cm</span>
                       </div>
                       <div>
-                        <p class="text-2xl">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup> </span></p>
+                        <p class="text-xl">Area: <span id="rectangle-area">0</span> <span>cm<sup>2</sup> </span></p>
                       </div>
                       <div class="card-actions justify-end">
                         <button onclick="calculateRectangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -74,7 +74,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="parallelogram-area"></span> cm <sup>2</sup></p>
+                            <p class="text-xl">Area: <span id="parallelogram-area">0</span> cm <sup>2</sup></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateParallelogramArea()" class="btn btn-primary w-full">Calculate</button>
@@ -87,9 +87,18 @@
                             alt="Shoes" /></figure>
                     <div class="card-body">
                         <h2 class="card-title">Rhombus!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <p class="text-xl">Area (A) = b X h</p>
+                        <div class="flex gap-5">
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="rhombus-base" placeholder="base">
+                            <span>cm</span>
+                            <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="rhombus-height" placeholder="height">
+                            <span>cm</span>
+                        </div>
+                        <div>
+                            <p class="text-xl">Area: <span id="rhombus-area">0</span> cm<sup>2</sup></p>
+                        </div>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                            <button onclick="calculateRhombusArea()" class="btn btn-primary w-full">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -102,10 +111,12 @@
                         <p>Area = 0.5 * p * b</p>
                         <div class="flex gap-5">
                             <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-perimeter" placeholder="Peri">
+                            <span>cm</span>
                             <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="pentagon-apothem" placeholder="apo">
+                            <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="pentagon-area">0</span> cm<sup>2</sup> </p>
+                            <p class="text-xl">Area: <span id="pentagon-area">0</span> cm<sup>2</sup> </p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculatePentagonArea()" class="btn btn-primary w-full">Calculate</button>
@@ -121,10 +132,12 @@
                         <p>Area = π * a * b</p>
                         <div class="flex gap-5">
                             <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-major-radius" placeholder="major">
+                            <span>cm</span>
                             <input class="w-24 text-2xl p-2 rounded-sm" type="text" name="" id="ellipse-minor-radius" placeholder="minor">
+                            <span>cm</span>
                         </div>
                         <div>
-                            <p>Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
+                            <p class="text-xl">Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
                         </div>
                         <div class="card-actions justify-end">
                             <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">calculate</button>
@@ -144,6 +157,7 @@
     <script src="script/parallelogram-area.js"></script>
     <script src="script/pentagon-area.js"></script>
     <script src="script/ellipse-area.js"></script>
+    <script src="script/rhombus-area.js"></script>
 </body>
 
 </html>
