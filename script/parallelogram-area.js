@@ -3,5 +3,5 @@ function calculateParallelogramArea() {
     const parallelogramHeight = parseFloat(document.getElementById('parallelogram-height').value);
     document.getElementById('parallelogram-area').innerText = parallelogramBase * parallelogramHeight;
 
-    document.getElementById('Area calculation').innerText = `Area of a parallelogram = ${parallelogramBase * parallelogramHeight}`;
+    document.getElementById('Area calculation').innerText = `Area of a parallelogram = ${parallelogramBase * parallelogramHeight} cm²`;
 }
