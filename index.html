@@ -31,7 +31,7 @@
                             <span>cm</span>
                         </div>
                         <div>
-                            <p class="text-2xl">Area: <span id="triangle-area"></span> <span>cm<sup>2</sup></span></p>
+                            <p class="text-2xl">Area: <span id="triangle-area">0</span> <span>cm<sup>2</sup></span></p>
                         </div>
                         <div class="card-actions">
                             <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
@@ -134,15 +134,16 @@
             </div>
             <!-- Area calculation container -->
             <div class="w-96 border-2 border-gray-700 rounded-md">
-                <h3 class="text-3xl text-center p-4">Area calculation</h3>
+                <h3 class="text-3xl text-center p-4" id="rea-calculation">Area calculation</h3>
+                <p id="Area calculation"></p>
             </div>
         </div>
     </main>
-    <script src="scripts/triangle-calculate.js"></script>
-    <script src="scripts/rectangle-area.js"></script>
-    <script src="scripts/parallelogram-area.js"></script>
-    <script src="scripts/pentagon-area.js"></script>
-    <script src="scripts/ellipse-area.js"></script>
+    <script src="script/triangle-calculate.js"></script>
+    <script src="script/rectangle-area.js"></script>
+    <script src="script/parallelogram-area.js"></script>
+    <script src="script/pentagon-area.js"></script>
+    <script src="script/ellipse-area.js"></script>
 </body>
 
 </html>
